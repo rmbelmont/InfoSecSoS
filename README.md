@@ -1,4 +1,4 @@
-# InfoSecSoS
+# InfoSecSoS Ontology
 Ontology for Information Security Management in Systems-of-Systems.
 
 Master’s Thesis by Roberto Monteiro Dias. Graduate Program of Informatics, UNIRIO, 2022.
