@@ -1,0 +1,2017 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.labesc.unirio.br/InfoSecSoS#"
+     xml:base="http://www.labesc.unirio.br/InfoSecSoS"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:infosecsos="http://www.labesc.unirio.br/InfoSecSoS">
+    <owl:Ontology rdf:about="http://www.labesc.unirio.br/InfoSecSoS">
+        <owl:versionIRI rdf:resource="http://www.labesc.unirio.br/InfoSecSoS"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#IsHeldByComponent_Information_Security -->
+
+    <owl:ObjectProperty rdf:about="http://www.labesc.unirio.br/InfoSecSoS#IsHeldByComponent_Information_Security">
+        <owl:inverseOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+        <rdfs:domain rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+        <rdfs:range rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#IsHeldByComponent_Information_Security"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#attacksComponent_Systems_of_Systems -->
+
+    <owl:ObjectProperty rdf:about="http://www.labesc.unirio.br/InfoSecSoS#attacksComponent_Systems_of_Systems">
+        <rdfs:domain rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdfs:range rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#hasApplication_Domain -->
+
+    <owl:ObjectProperty rdf:about="http://www.labesc.unirio.br/InfoSecSoS#hasApplication_Domain">
+        <rdfs:domain rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasApplication_Domain"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Application_Domain"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasApplication_Domain"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Building_Management"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasApplication_Domain"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Energy_Distribution"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasApplication_Domain"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Health"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasApplication_Domain"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Public_Safety"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasApplication_Domain"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Smart_Car"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasApplication_Domain"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Traffic_Control"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasApplication_Domain"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Transport_Integration"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems -->
+
+    <owl:ObjectProperty rdf:about="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems">
+        <rdfs:domain rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdfs:range rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#cryptographyPrivateKeyHasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.labesc.unirio.br/InfoSecSoS#cryptographyPrivateKeyHasName">
+        <rdfs:domain rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#RSA"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#probabilisticAlgorithmHasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.labesc.unirio.br/InfoSecSoS#probabilisticAlgorithmHasName">
+        <rdfs:domain rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Monte_Carlo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:domain rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Technology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Accept -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Accept">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Risk_Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Acknowledged_System_of_Systems -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Acknowledged_System_of_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Centralized_System_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Adversary -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Adversary">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Algorithm -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Analysis_and_Validation -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Analysis_and_Validation">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Assessment_Methodology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Application_Domain -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Application_Domain">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Artificial_Intelligence -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Artificial_Intelligence">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Assessment_Methodology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Assessment_Methodology -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Assessment_Methodology">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Asset -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Asset">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Attribute_Based_Encryption -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Attribute_Based_Encryption">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Public_Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Building_Management -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Building_Management">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Application_Domain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Business_Environment -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Business_Environment">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Case_Study -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Case_Study">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Assessment_Methodology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Central_Authority -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Central_Authority">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Centralized_System_of_Systems -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Centralized_System_of_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Systems_of_Systems_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Chalenge -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Chalenge">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Coalition_System_of_Systems -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Coalition_System_of_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Dentralized_System_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Collaborative_System_of_Systems -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Collaborative_System_of_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Dentralized_System_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Comparative_Analysis -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Comparative_Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Assessment_Methodology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Complexity -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Complexity">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Systems_of_Systems_Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Compromise -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Compromise">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Incident_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Constituent -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Constituent">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Constituent_Stakeholder -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Constituent_Stakeholder">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Stakeholder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Constituint_Characteristic -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Constituint_Characteristic">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Control -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Control">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Corrective -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Corrective">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Cryptography -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Cryptography">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Data-Intensive -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Data-Intensive">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Constituint_Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Date_and_Time -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Date_and_Time">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Deep_Learning -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Deep_Learning">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Artificial_Intelligence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Dentralized_System_of_Systems -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Dentralized_System_of_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Systems_of_Systems_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Derived_Classes -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Derived_Classes">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Descriptive_Analysis -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Descriptive_Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Assessment_Methodology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Detective -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Detective">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Dynamic_Architecture -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Dynamic_Architecture">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Software_Architecture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Elliptic_Curve -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Elliptic_Curve">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Public_Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Emergence -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Emergence">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Constituint_Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Emergente_Behavior -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Emergente_Behavior">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Systems_of_Systems_Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Energy_Distribution -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Energy_Distribution">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Application_Domain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Environment -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Environment">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Environment_Simulation -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Environment_Simulation">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Estate_Property -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Estate_Property">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Evolutionary_Algorithm -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Evolutionary_Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Algorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Evolutionary_Development -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Evolutionary_Development">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Systems_of_Systems_Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#FIS -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#FIS">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Derived_Classes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Federated_System_of_Systems -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Federated_System_of_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Dentralized_System_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Global_Mission -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Global_Mission">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Mission"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Health -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Health">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Application_Domain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Heterogeneity -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Heterogeneity">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Constituint_Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Human_Factor -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Human_Factor">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Specific_Factor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Human_Factor-Actor_Behavior_Factor -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Human_Factor-Actor_Behavior_Factor">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Human_Factor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Human_Factor-Customer_Type_Factor -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Human_Factor-Customer_Type_Factor">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Human_Factor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Incident -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Incident">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Incident_Type -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Incident_Type">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Individual_Mission -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Individual_Mission">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Mission"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Information_Transparency -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Information_Transparency">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Chalenge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Intellectual_Property -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Intellectual_Property">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Interoperability -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Interoperability">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Chalenge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Lost_Value -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Lost_Value">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Machine_Learning -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Machine_Learning">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Artificial_Intelligence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Managerial_Independence -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Managerial_Independence">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Constituint_Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Markov_Chain -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Markov_Chain">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Probabilistic_Algorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Military -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Military">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Use_Systems_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Mission -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Mission">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Mitigate -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Mitigate">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Risk_Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Money -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Money">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Monitoring_Scheme -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Monitoring_Scheme">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Monte_Carlo -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Monte_Carlo">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Probabilistic_Algorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#News_Source -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#News_Source">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Operacional_Independence -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Operacional_Independence">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Constituint_Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Organisation -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Organisation">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Organisation_Name -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Organisation_Name">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Physical_Distribution -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Physical_Distribution">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Constituint_Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Physical_Site_Characteristic -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Physical_Site_Characteristic">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Estate_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Point_of_Vulnerability -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Point_of_Vulnerability">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Specific_Factor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Point_of_Vulnerability-Architecture -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Point_of_Vulnerability-Architecture">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Point_of_Vulnerability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Point_of_Vulnerability-Constituents_Interface -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Point_of_Vulnerability-Constituents_Interface">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Point_of_Vulnerability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Preventative -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Preventative">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Prevention -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Prevention">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Incident_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Private_key -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Private_key">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Cryptography"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Probabilistic_Algorithm -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Probabilistic_Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Algorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Product -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Product">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Protocol -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Protocol">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Public_Key -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Public_Key">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Cryptography"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Public_Safety -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Public_Safety">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Application_Domain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Quality_Attribute -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Quality_Attribute">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#RSA -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#RSA">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Public_Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Region -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Region">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Business_Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Reject -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Reject">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Risk_Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Reported -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Reported">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Lost_Value"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Response -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Response">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Reuse -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Reuse">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Constituint_Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Risk -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Risk">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Risk_Treatment -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Risk_Treatment">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Risk_of_Attacks-Cyber_Attack -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Risk_of_Attacks-Cyber_Attack">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Specific_Factor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Sector -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Sector">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Business_Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Security_Belief -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Security_Belief">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Security_Policy -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Security_Policy">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Specific_Factor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Security_Policy-Access_Control -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Security_Policy-Access_Control">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Security_Policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Security_Policy-Data_Privacy_Level -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Security_Policy-Data_Privacy_Level">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Security_Policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Services -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Services">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Estate_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Size -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Size">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Estate_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Size_Systems_of_Systems -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Size_Systems_of_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Systems_of_Systems_Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Smart_Car -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Smart_Car">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Application_Domain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Smart_City -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Smart_City">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Use_Systems_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#SoIS -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#SoIS">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Derived_Classes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Software_Architecture -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Software_Architecture">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Specific_Factor -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Specific_Factor">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Stakeholder -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Stakeholder">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Suspected -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Suspected">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Lost_Value"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Suspected_Compromise -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Suspected_Compromise">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Incident_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#System -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#System">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Estate_Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Systems_of_Systems_Characteristic -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Systems_of_Systems_Characteristic">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Systems_of_Systems_Engineering -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Systems_of_Systems_Engineering">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Systems_of_Systems_Stakeholder -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Systems_of_Systems_Stakeholder">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Stakeholder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Systems_of_Systems_Type -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Systems_of_Systems_Type">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Targeting_Strategy -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Targeting_Strategy">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Technology -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Technology">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Threat_Type -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Threat_Type">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Timescale -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Timescale">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Traffic_Control -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Traffic_Control">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Application_Domain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Transfer -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Transfer">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Risk_Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Transport -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Transport">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Use_Systems_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Transport_Integration -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Transport_Integration">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Application_Domain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Update -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Update">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Incident_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Use_Systems_of_Systems -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Use_Systems_of_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Variability -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Variability">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Systems_of_Systems_Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Virtual_System_of_Systems -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Virtual_System_of_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Dentralized_System_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Vulnerability_Point_Analysis -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Vulnerability_Point_Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#by_Experts -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#by_Experts">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Analysis_and_Validation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Directed/Organizational_System_of_Systems -->
+
+    <owl:Class rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Directed/Organizational_System_of_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Centralized_System_of_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Adversary -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Adversary">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Adversary"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Analysis_and_Validation_by_Experts -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Analysis_and_Validation_by_Experts">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Analysis_and_Validation"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Assessment_Methodology"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#by_Experts"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Artificial_Intelligence-Deep_Learning -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Artificial_Intelligence-Deep_Learning">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Assessment_Methodology"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Deep_Learning"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Artificial_Intelligence-Machine_Learning -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Artificial_Intelligence-Machine_Learning">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Assessment_Methodology"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Machine_Learning"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Asset -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Asset">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Asset"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Attribute_Based_Public_Key_Encryption -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Attribute_Based_Public_Key_Encryption">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Attribute_Based_Encryption"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Cryptography"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Public_Key"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Technology"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Building_Management -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Building_Management">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Application_Domain"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Building_Management"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasApplication_Domain"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Building_Management"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Business_Environment -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Business_Environment">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Business_Environment"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Case_Study -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Case_Study">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Assessment_Methodology"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Case_Study"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Comparative_Analysis -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Comparative_Analysis">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Assessment_Methodology"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Comparative_Analysis"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Control -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Control">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Control"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Cryptography_Public_Key_Elliptical_Curves -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Cryptography_Public_Key_Elliptical_Curves">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Cryptography"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Elliptic_Curve"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Private_key"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Technology"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Cryptography_Public_Key_RSA -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Cryptography_Public_Key_RSA">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Cryptography"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Public_Key"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#RSA"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Technology"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+        <cryptographyPrivateKeyHasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSA</cryptographyPrivateKeyHasName>
+        <cryptographyPrivateKeyHasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rivest-Shamir-Adleman</cryptographyPrivateKeyHasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Date_and_Time -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Date_and_Time">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Date_and_Time"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Descriptive_Analysis -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Descriptive_Analysis">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Assessment_Methodology"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Descriptive_Analysis"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Energy_Distribution -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Energy_Distribution">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Application_Domain"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Energy_Distribution"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasApplication_Domain"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Energy_Distribution"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Environment_Simulation -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Environment_Simulation">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Environment_Simulation"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Technology"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Environment_Simulation"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Estate_Property -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Estate_Property">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Estate_Property"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Evolutionary_Algorithm -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Evolutionary_Algorithm">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Algorithm"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Evolutionary_Algorithm"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Technology"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#FIS -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#FIS">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#FIS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Health -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Health">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Application_Domain"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Health"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasApplication_Domain"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Health"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Human_Factor-Actor_Behavior -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Human_Factor-Actor_Behavior">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Human_Factor"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Human_Factor-Actor_Behavior_Factor"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Specific_Factor"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Human_Factor-Customer_Type -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Human_Factor-Customer_Type">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Human_Factor"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Human_Factor-Customer_Type_Factor"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Specific_Factor"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Incident -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Incident">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Incident"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Incident_Type -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Incident_Type">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Incident_Type"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Lost_Value -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Lost_Value">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Lost_Value"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Monitoring_Scheme -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Monitoring_Scheme">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Monitoring_Scheme"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Technology"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#News_Source -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#News_Source">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#News_Source"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Organisation -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Organisation">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Organisation"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Organisation_Name -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Organisation_Name">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Organisation_Name"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Point_of_Vulnerability-Architecture -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Point_of_Vulnerability-Architecture">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Point_of_Vulnerability"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Point_of_Vulnerability-Architecture"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Specific_Factor"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Point_of_Vulnerability-Constituents_Interface -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Point_of_Vulnerability-Constituents_Interface">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Point_of_Vulnerability"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Point_of_Vulnerability-Constituents_Interface"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Specific_Factor"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Probabilistic_Algorithm_Markov_Chain -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Probabilistic_Algorithm_Markov_Chain">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Algorithm"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Markov_Chain"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Probabilistic_Algorithm"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Technology"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Probabilistic_Algorithm_Monte_Carlo -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Probabilistic_Algorithm_Monte_Carlo">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Algorithm"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Monte_Carlo"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Probabilistic_Algorithm"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Technology"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+        <probabilisticAlgorithmHasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monte Carlo</probabilisticAlgorithmHasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Protocol -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Protocol">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Protocol"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Technology"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Public_Safety -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Public_Safety">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Application_Domain"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Public_Safety"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasApplication_Domain"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Public_Safety"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Response -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Response">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Response"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Risk -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Risk">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Risk"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Risk_Treatment -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Risk_Treatment">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Risk_Treatment"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Risk_of_Attacks-Cyber_Attack -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Risk_of_Attacks-Cyber_Attack">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Risk_of_Attacks-Cyber_Attack"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Specific_Factor"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Security_Belief -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Security_Belief">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Security_Belief"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Security_Policy-Access_Control -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Security_Policy-Access_Control">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Security_Policy"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Security_Policy-Access_Control"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Specific_Factor"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Security_Policy-Data_Privacy_Level -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Security_Policy-Data_Privacy_Level">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Security_Policy"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Security_Policy-Data_Privacy_Level"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Specific_Factor"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Smart_Car -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Smart_Car">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Application_Domain"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Smart_Car"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasApplication_Domain"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Smart_Car"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#SoIS -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#SoIS">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#SoIS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Targeting_Strategy -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Targeting_Strategy">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Targeting_Strategy"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Timescale -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Timescale">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Timescale"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Traffic_Control -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Traffic_Control">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Application_Domain"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Traffic_Control"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasApplication_Domain"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Traffic_Control"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Transport_Integration -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Transport_Integration">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Application_Domain"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Transport_Integration"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasApplication_Domain"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Transport_Integration"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.labesc.unirio.br/InfoSecSoS#Vulnerability_Point_Analysis -->
+
+    <owl:NamedIndividual rdf:about="http://www.labesc.unirio.br/InfoSecSoS#Vulnerability_Point_Analysis">
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Information_Security"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Technology"/>
+        <rdf:type rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Vulnerability_Point_Analysis"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#hasComponent_Systems_of_Systems"/>
+                <owl:someValuesFrom rdf:resource="http://www.labesc.unirio.br/InfoSecSoS#Component_Systems_of_Systems"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
